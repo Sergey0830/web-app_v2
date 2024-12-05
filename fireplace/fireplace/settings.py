@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-$!#p)2irlj7xe_l#zcrs+x@#^$p5%85eag^$711$d$e%fv5&#7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['web-app-v2-1.onrender.com', 'localhost']
+ALLOWED_HOSTS = ['web-app-v2-1.onrender.com', '127.0.0.1']
 
 
 # Application definition
@@ -55,7 +55,9 @@ ROOT_URLCONF = 'fireplace.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
