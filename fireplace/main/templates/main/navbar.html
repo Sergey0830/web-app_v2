@@ -1,0 +1,52 @@
+{%load static%}
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'main/css/bootstrap.css '%}" rel="stylesheet">
+    <link href="{% static 'main/css/social.css '%}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'main/css/carousel.css' %}" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark py-3" >
+        <div class="container-fluid">
+        <a class="navbar-brand" style="font-size: 30px; color: #f5d14e; font-weight: bold;">
+          <img src="{% static 'main/img/fireplace_logo.png' %}" alt="Logo" width="33" height="33" class="d-inline-block align-text-top">
+          ГрильКамін
+          </a>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link h5" href="{% url 'index' %}">Головна <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link h5" href="{% url 'gallery' %}">Галерея робіт <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link h5" href="{% url 'contacts' %}">Контакти <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link h5" href="{% url 'about' %}">Про нас <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+          <form class="form-label">
+            <a href="https://www.instagram.com" target="_blank" class="social-icon">
+              <img src="{% static 'main/img/instagram.png'%}"  style="width:36px;height:36px;" alt="Instagram Icon">
+              <span class="social-text">Instagram</span>
+
+            </a>
+            <a href="https://t.me/pavliukvera" target="_blank" class="social-icon">
+              <img src="{% static 'main/img/telegram.png'%}"  style="width:32px;height:32px;" alt="Telegram Icon">
+              <span class="social-text">Telegram</span>
+            </a>
+
+            <a href=tel:+380938960503" class="social-icon">
+              <img src="{% static 'main/img/phone_call.png'%}"  style="width:31px;height:31px;" alt="Phone Icon">
+              <span class="social-text">Зателефонувати</span>
+            </a>
+
+          </form>
+        </div>
+        </div>
+      </nav>
+    </header>

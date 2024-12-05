@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{% static 'main/css/styles.css' %}">
+    <title>Галерея робіт - КамінГриль</title>
+  </head>
+  <body>
+    {% include 'main/navbar.html' %}  <!-- Використовуємо точний шлях -->
+
+    <div class="container">
+      <h1 class="text-center my-5">Галерея робіт</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="{% static 'main/img/img_proj1.jpeg' %}" class="img-fluid rounded" alt="Проект 1">
+        </div>
+        <div class="col-md-4">
+          <img src="{% static 'main/img/img_proj2.png' %}" class="img-fluid rounded" alt="Проект 2">
+        </div>
+        <div class="col-md-4">
+          <img src="{% static 'main/img/img_proj5.jpeg' %}" class="img-fluid rounded" alt="Проект 3">
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>

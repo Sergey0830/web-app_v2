@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{% static 'main/css/styles.css' %}">
+    <title>Контакти - КамінГриль</title>
+  </head>
+  <body>
+    {% include 'main/navbar.html' %}
+
+    <div class="container my-5">
+      <h1 class="text-center mb-5">Контакти</h1>
+      <div class="row">
+        <!-- Стовпець з контактною інформацією -->
+        <div class="col-lg-6 text-start"> <!-- Вирівнювання тексту ліворуч -->
+          <ul class="list-unstyled">
+            <li><strong>Телефон:</strong> <a href="tel:+380938960503">+38 (093) 896-05-03</a></li>
+            <li><strong>Email:</strong> <a href="mailto:braithwithout@gmail.com">braithwithout@gmail.com</a></li>
+            <li><strong>Instagram:</strong> <a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+            <li><strong>Telegram:</strong> <a href="https://t.me/pavliukvera" target="_blank">Telegram</a></li>
+          </ul>
+        </div>
+
+        <!-- Стовпець з основним текстом -->
+        <div class="col-lg-6 text-end"> <!-- Вирівнювання тексту праворуч -->
+          <p>
+            Ви можете зв’язатися зі мною будь-яким зручним способом. Я завжди відкритий до співпраці
+            та готовий відповісти на ваші запитання.
+          </p>
+          <p>
+            Працюю по всій Україні та за її межами. Звертайтеся — буду радий допомогти вам
+            реалізувати ваші ідеї та проєкти!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

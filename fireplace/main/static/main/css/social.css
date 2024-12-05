@@ -1,0 +1,29 @@
+.social-icon {
+  position: relative; /* Для позиционирования текста */
+  display: inline-block;
+}
+
+.social-icon img {
+  width: 50px; /* Размер иконки */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Плавный переход */
+}
+
+.social-icon:hover img {
+  transform: scale(1.2); /* Увеличение иконки при наведении */
+}
+
+.social-text {
+  position: absolute;
+  top: 100%; /* Располагаем текст под иконкой */
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 5px;
+  font-size: 14px;
+  color: white; /* Белый цвет текста */
+  opacity: 0; /* Текст скрыт по умолчанию */
+  transition: opacity 0.3s ease; /* Плавное появление текста */
+}
+
+.social-icon:hover .social-text {
+  opacity: 1; /* Показываем текст при наведении */
+}
