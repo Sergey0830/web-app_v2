@@ -6,25 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="{% static 'main/img/logo_site.png'%}">
-    <link rel="stylesheet" href="{% static 'main/css/styles.css'%}"> <!-- Підключаємо CSS файл -->
+    <link rel="icon" href="{%static 'main/img/logo_site.png'%}">
+    <link rel="stylesheet" href="{%static 'main/css/styles.css'%}"> <!-- Підключаємо CSS файл -->
 
 
     <title>КамінГриль</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{% static 'main/css/bootstrap.css'%}" rel="stylesheet">
-    <link href="{% static 'main/css/social.css'%}" rel="stylesheet">
+    <link href="{%static 'main/css/bootstrap.css'%}" rel="stylesheet">
+    <link href="{%static 'main/css/social.css'%}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="{% static 'main/css/carousel.css'%}" rel="stylesheet">
+    <link href="{%static 'main/css/carousel.css'%}" rel="stylesheet">
   </head>
   <body>
     {% include 'main/navbar.html' %}
 
     <div>
         <div class="carousel-item active">
-          <img src="{% static 'main/img/fireplace.png'%}" alt="First slide">
+          <img src="{%static 'main/img/fireplace.png'%}" alt="First slide">
           <div class="container">
             <div class="carousel-caption text-left">
               <h1>Професійне будівництво камінів та печей</h1>
@@ -45,7 +45,7 @@
     <div class="container marketing">
         <div class="row">
             <div class="col-lg-4 fade-in-up">
-                <img class="rounded-circle" src="{% static 'main/img/img_proj1.jpeg'%}" alt="Пічний комплекс" width="140" height="140">
+                <img class="rounded-circle" src="{%static 'main/img/img_proj1.jpeg'%}" alt="Пічний комплекс" width="140" height="140">
                 <h2>Пічний комплекс</h2>
                 <p>
                     Пічний комплекс включає п’ять функціональних зон. У верхній частині розташована велика піч з арковим
@@ -55,16 +55,16 @@
                 </p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4 fade-in-up">
-                <img class="rounded-circle" src="{% static 'main/img/img_proj2.png'%}" alt="Додатковий проект" width="140" height="140">
+                <img class="rounded-circle" src="{%static 'main/img/img_proj2.png'%}" alt="Додатковий проект" width="140" height="140">
                 <h2>Камін</h2>
                 <p>Цегляний камін із міцною конструкцією та великою скляною дверцею на металевій рамі. Топка викладена
                   вогнетривкою цеглою, що гарантує тривалу експлуатацію при високих температурах. Скляні дверцята
                   забезпечують безпечне користування та дозволяють насолоджуватися видом відкритого вогню, створюючи
                   атмосферу затишку та комфорту.</p>
-               <button><a class="nav-link h5" href="{% url 'types_work'%}">Дізнатися більше</a></button>
+               <button><a class="nav-link h5" href="{%url 'types_work'%}">Дізнатися більше</a></button>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4 fade-in-up">
-                <img class="rounded-circle" src="{% static 'main/img/img_proj5.jpeg'%}" alt="Ще один проект" width="140" height="140">
+                <img class="rounded-circle" src="{%static 'main/img/img_proj5.jpeg'%}" alt="Ще один проект" width="140" height="140">
                 <h2>Промислова піч</h2>
                 <p>Промислова піч для сушки, виготовлена з вогнетривкої цегли, яка забезпечує надійність та витривалість
                   при високих температурах. Конструкція підсилена металевим каркасом для стабільності та безпеки в
@@ -97,6 +97,6 @@
     <script src="../../../../dist/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="../../../../assets/js/vendor/holder.min.js"></script>
-    <script src="{% static 'main/js/script.js'%}"></script>
+    <script src="{%static 'main/js/script.js'%}"></script>
   </body>
 </html>
