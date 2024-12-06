@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-$!#p)2irlj7xe_l#zcrs+x@#^$p5%85eag^$711$d$e%fv5&#7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mysite.pythonanywhere.com', '127.0.0.1']
+ALLOWED_HOSTS = ['web-app-v2-1.onrender.com', '127.0.0.1']
 
 
 # Application definition
@@ -48,6 +48,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'fireplace.urls'
@@ -120,7 +121,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_DIRS=[
-    os.path.join(BASE_DIR, 'main', 'static')
+    os.path.join(BASE_DIR, 'main', 'staticfiles')
 ]
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
